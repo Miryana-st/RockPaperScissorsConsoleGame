@@ -3,7 +3,7 @@ A console Java implementation of the Rock - Paper - Scissors game
 
 ![image](https://github.com/Miryana-st/RockPaperScissorsConsoleGame/assets/136957171/47c2ec2a-e9ed-4df9-b759-c15db63d8308)
 
-Rock - Paper - Scissors is a popular game, usually played between two players. You and your opponent - the super mega giga smart computer, simultaneously choose one of three shapes - Rock, Paper or Scissors. The rules are as follows: Rock beats Scissors, Scissors beats Paper and Paper beats Rock. 
+Rock - Paper - Scissors is a popular game, usually played between two players. You and your opponent - the O'Mighty Computer, simultaneously choose one of three shapes - Rock, Paper or Scissors. The rules are as follows: Rock beats Scissors, Scissors beats Paper and Paper beats Rock. 
 
 
 # Inputs and Outputs:
