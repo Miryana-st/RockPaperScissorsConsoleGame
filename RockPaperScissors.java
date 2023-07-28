@@ -24,45 +24,45 @@ public class RockPaperScissors {
             flag = false;
         }
         Random random = new Random();
-        int computerRandomNumber = random.nextInt(4);
+        int computerRandomNumber = random.nextInt(3);
         String computersMove = "";
 
         String resultFromGame = "";
         switch (computerRandomNumber) {
-            case 1:
+            case 0:
                 computersMove = ROCK;
                 if (playerMove.equals(ROCK)) {
                     resultFromGame = "Draw";
                 } else if (playerMove.equals(PAPER)) {
                     resultFromGame = "You Win";
-                } else {
+                } else if (playerMove.equals(SCISSORS)) {
                     resultFromGame = "You Lose";
                 }
                 break;
 
-            case 2:
+            case 1:
                 computersMove = PAPER;
                 if (playerMove.equals(ROCK)) {
                     resultFromGame = "You Lose";
                 } else if (playerMove.equals(PAPER)) {
                     resultFromGame = "Draw";
-                } else {
+                } else if (playerMove.equals(SCISSORS)) {
                     resultFromGame = "You Win";
                 }
                 break;
 
-            case 3:
+            case 2:
                 computersMove = SCISSORS;
                 if (playerMove.equals(ROCK)) {
                     resultFromGame = "You Win";
                 } else if (playerMove.equals(PAPER)) {
                     resultFromGame = "You Lose";
-                } else {
+                } else if (playerMove.equals(SCISSORS)) {
                     resultFromGame = "Draw";
                 }
                 break;
         }
-        if (flag) {
+        if (flag ) {
             System.out.printf("The super mega giga smart computer chose: %s%n", computersMove);
             System.out.println(resultFromGame);
         }
