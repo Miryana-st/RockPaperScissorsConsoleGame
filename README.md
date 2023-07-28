@@ -19,9 +19,8 @@ The computer chooses a random option and then the winner is revealed.
 
 A series of checks were used to handle all the possible outcomes. 
 
-# Source Code:
-• RockPaperScissors.java
-
 # Example Screenshots
+
+![image](https://github.com/Miryana-st/RockPaperScissorsConsoleGame/assets/136957171/680e62f7-8ee6-4a97-b8ff-049a7c84d224)
 
 
