@@ -63,7 +63,7 @@ public class RockPaperScissors {
                 break;
         }
         if (flag ) {
-            System.out.printf("The super mega giga smart computer chose: %s%n", computersMove);
+            System.out.printf("The oh mighty computer chose: %s%n", computersMove);
             System.out.println(resultFromGame);
         }
     }
