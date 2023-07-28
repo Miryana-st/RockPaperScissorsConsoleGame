@@ -24,6 +24,4 @@ A series of checks were used to handle all the possible outcomes.
 
 # Example Screenshots
 
-![image](https://github.com/Miryana-st/RockPaperScissorsConsoleGame/assets/136957171/11f4ccd6-97dd-4712-880f-67c3f1e5c061)
 
-![image](https://github.com/Miryana-st/RockPaperScissorsConsoleGame/assets/136957171/1d840a67-2c3a-4b49-aec7-7cf84a52b904)
