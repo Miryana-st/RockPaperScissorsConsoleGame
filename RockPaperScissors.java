@@ -20,7 +20,7 @@ public class RockPaperScissors {
         } else if (playerMove.equals("s") || playerMove.equals("scissors")) {
             playerMove = SCISSORS;
         } else {
-            System.out.println("Your choice is not a wise one. Please choose again...");
+            System.out.println("Your choice is not a wise one. Invalid input.");
             flag = false;
         }
         Random random = new Random();
