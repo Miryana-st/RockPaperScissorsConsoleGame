@@ -12,24 +12,26 @@ public class RockPaperScissors {
         System.out.print("Choose wisely from [r]ock, [p]aper or [s]cissors: ");
         String playerMove = scanner.nextLine();
 
-        if (playerMove.equals("r") || playerMove.equals("rock")){
+        boolean flag = true;
+        if (playerMove.equals("r") || playerMove.equals("rock")) {
             playerMove = ROCK;
-        } else if (playerMove.equals("p") || playerMove.equals("paper")){
+        } else if (playerMove.equals("p") || playerMove.equals("paper")) {
             playerMove = PAPER;
-        } else if (playerMove.equals("s") || playerMove.equals("scissors")){
+        } else if (playerMove.equals("s") || playerMove.equals("scissors")) {
             playerMove = SCISSORS;
         } else {
             System.out.println("Your choice is not a wise one. Please choose again...");
+            flag = false;
         }
         Random random = new Random();
         int computerRandomNumber = random.nextInt(4);
         String computersMove = "";
 
         String resultFromGame = "";
-        switch (computerRandomNumber){
-            case 1 :
+        switch (computerRandomNumber) {
+            case 1:
                 computersMove = ROCK;
-                if (playerMove.equals(ROCK)){
+                if (playerMove.equals(ROCK)) {
                     resultFromGame = "Draw";
                 } else if (playerMove.equals(PAPER)) {
                     resultFromGame = "You Win";
@@ -40,7 +42,7 @@ public class RockPaperScissors {
 
             case 2:
                 computersMove = PAPER;
-                if (playerMove.equals(ROCK)){
+                if (playerMove.equals(ROCK)) {
                     resultFromGame = "You Lose";
                 } else if (playerMove.equals(PAPER)) {
                     resultFromGame = "Draw";
@@ -51,7 +53,7 @@ public class RockPaperScissors {
 
             case 3:
                 computersMove = SCISSORS;
-                if (playerMove.equals(ROCK)){
+                if (playerMove.equals(ROCK)) {
                     resultFromGame = "You Win";
                 } else if (playerMove.equals(PAPER)) {
                     resultFromGame = "You Lose";
@@ -60,9 +62,9 @@ public class RockPaperScissors {
                 }
                 break;
         }
-        System.out.printf("The super mega giga smart computer chose: %s%n", computersMove);
-        System.out.println(resultFromGame);
-
-
+        if (flag ) {
+            System.out.printf("The super mega giga smart computer chose: %s%n", computersMove);
+            System.out.println(resultFromGame);
+        }
     }
 }
